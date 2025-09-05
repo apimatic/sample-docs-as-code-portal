@@ -1,44 +1,140 @@
 {
-    "$schema": "https://titan.apimatic.io/api/build/schema",
-    "buildFileVersion": "1",
-    "generatePortal": {
-        "debug": {
-            "publishReport": true
+  "$schema": "https://titan.apimatic.io/api/build/schema",
+  "buildFileVersion": "1",
+  "generatePortal": {
+    "debug": {
+      "publishReport": true
+    },
+    "baseUrl": "http://localhost:3000",
+    "llmsContextGeneration": {},
+    "pageTitle": "My First Portal",
+    "navTitle": "Developer Experience Portal",
+    "logoUrl": "static/images/logo.png",
+    "logoUrlDark": "static/images/logo-dark.png",
+    "logoLink": "https://www.apimatic.io",
+    "faviconUrl": "static/images/favicon.ico",
+    "languageConfig": {
+      "typescript": {},
+      "ruby": {},
+      "python": {},
+      "java": {},
+      "csharp": {},
+      "php": {},
+      "go": {},
+      "http": {}
+    },
+    "headIncludes": "  <link href=\"https:\\/\\/fonts.googleapis.com\\/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap\" rel=\"stylesheet\">",
+    "portalSettings": {
+      "theme": {
+        "baseTheme": "cosmos",
+        "colorMode": {
+          "defaultMode": "system",
+          "disableSwitch": false
         },
-        "pageTitle": "My First Portal",
-        "navTitle": "Developer Experience Portal",
-        "logoUrl": "static/images/logo.png",
-        "logoLink": "https://www.apimatic.io",
-        "faviconUrl": "static/images/favicon.ico",
-        "languageConfig": {
-            "http": {},
-            "java": {
-                "packageRepository": "Maven",
-                "packageSettings": {
-                    "GroupId": "com.apimatic",
-                    "PackageName": "sample-sdk-artifact-id",
-                    "Version": "1.0.0"
-                }
-            },
-            "csharp": {},
-            "typescript": {},
-            "php": {},
-            "python": {},
-            "ruby": {},
-            "go":{}
-
+        "primaryColor": {
+          "light": "#0C7FF2",
+          "dark": "#7CBAF8"
         },
-        "headIncludes": "  <link href=\"https:\\/\\/fonts.googleapis.com\\/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap\" rel=\"stylesheet\">",
-        "portalSettings": {
-            "theme": {
-                "baseTheme": "standard",
-                "colorMode": {
-                    "defaultMode": "system",
-                    "disableSwitch": false
-                }
+        "linkColor": {
+          "light": "#004AD7",
+          "dark": "#A3D1FF"
+        },
+        "fontSource": [
+          "https://fonts.googleapis.com/css?family=Inter:100,100i,300,300i,400,400i,500,500i,700,700i,900,900",
+          "https://fonts.googleapis.com/css?family=Courier+Prime:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        ],
+        "cssStyles": {
+          "headings": {
+            "fontFamily": "Inter",
+            "h1": {
+              "fontFamily": "Inter",
+              "fontSize": "22.5px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
             },
-            "enableExport": true,
-            "enableConsoleCalls": true
+            "h2": {
+              "fontFamily": "Inter",
+              "fontSize": "21px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h3": {
+              "fontFamily": "Inter",
+              "fontSize": "19.5px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h4": {
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h5": {
+              "fontFamily": "Inter",
+              "fontSize": "16.5px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            },
+            "h6": {
+              "fontFamily": "Inter",
+              "fontSize": "15px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.2"
+            }
+          },
+          "body": {
+            "fontFamily": "Inter",
+            "text1": {
+              "fontFamily": "Inter",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text2": {
+              "fontFamily": "Inter",
+              "fontSize": "13.33px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text3": {
+              "fontFamily": "Inter",
+              "fontSize": "11.85px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          },
+          "code": {
+            "fontFamily": "Courier Prime, monospace",
+            "blockCode": {
+              "fontFamily": "Courier Prime, monospace",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "inlineCode": {
+              "fontFamily": "Courier Prime, monospace",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          }
         }
+      },
+      "enableHttpVerbsForAllLangs": true,
+      "enableExport": true,
+      "enableConsoleCalls": true
     }
+  }
 }
