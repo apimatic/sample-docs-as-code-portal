@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      PORTAL_DIR: static-portal
+      PORTAL_DIR: ${{ github.workspace }}/static-portal
 
     steps:
       - uses: actions/checkout@v4
@@ -23,24 +23,21 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install APImatic CLI
-        run: npm install -g @apimatic/cli
-
       # Generate Portal with APImatic CLI
       - name: Generate Portal
-        run: apimatic portal:generate --auth-key=${{ secrets.API_KEY }} --destination=./${{ env.PORTAL_DIR }}
+        run: npx @apimatic/cli portal generate --auth-key="${{ secrets.API_KEY }}" --destination=${{ env.PORTAL_DIR }}
 
       # Upload Portal Artifact
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.PORTAL_DIR }}
+          name: static-portal
           path: ${{ env.PORTAL_DIR }}
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: "./${{ env.PORTAL_DIR }}"
+          publish-dir: ${{ env.PORTAL_DIR }}
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
