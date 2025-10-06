@@ -12,6 +12,8 @@ toc:
     # to generate and insert these sections here.
   - generate: API Endpoints
     from: endpoints
+  - generate: Events
+    from: events
   - generate: Models
     from: models
   - generate: SDK Infrastructure
