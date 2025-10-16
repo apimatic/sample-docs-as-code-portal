@@ -2,10 +2,8 @@ toc:
 
   - group: Onboarding Guides
     items:
-        - page: APIMatic DX Portal
+        - page: Overview
           file: guides/overview.md
-        - page: Sample Guide
-          file: guides/guide1.md
     # The Endpoint and Models sections contain auto-generated content. The 'generate' and 'from' directives instruct APIMatic's Docs generation service
     # to generate and insert these sections here.
   - group: Getting Started
