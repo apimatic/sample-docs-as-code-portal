@@ -5,8 +5,6 @@
     "debug": {
       "publishReport": true
     },
-    "baseUrl": "http://localhost:3000",
-    "llmsContextGeneration": {},
     "pageTitle": "My First Portal",
     "navTitle": "Developer Experience Portal",
     "logoUrl": "static/images/logo.png",
@@ -17,7 +15,14 @@
       "typescript": {},
       "ruby": {},
       "python": {},
-      "java": {},
+      "java": {
+                "packageRepository": "Maven",
+                "packageSettings": {
+                    "GroupId": "com.apimatic",
+                    "PackageName": "sample-sdk-artifact-id",
+                    "Version": "1.0.0"
+                }
+      },
       "csharp": {},
       "php": {},
       "go": {},

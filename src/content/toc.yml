@@ -15,7 +15,14 @@ toc:
       from: getting-started
   - generate: API Endpoints
     from: endpoints
+  - group: Events
+    items:
+      - generate:
+        from: callbacks
+      - generate:
+        from: webhooks
   - generate: Models
     from: models
   - generate: SDK Infrastructure
     from: sdk-infra
+
