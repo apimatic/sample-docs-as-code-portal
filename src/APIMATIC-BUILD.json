@@ -7,8 +7,8 @@
     },
     "pageTitle": "My First Portal",
     "navTitle": "Developer Experience Portal",
-    "logoUrl": "static/images/logo.png",
-    "logoUrlDark": "static/images/logo-dark.png",
+    "logoUrl": "static/images/placeholder-logo.png",
+    "logoUrlDark": "static/images/placeholder-logo-dark.png",
     "logoLink": "https://www.apimatic.io",
     "faviconUrl": "static/images/favicon.ico",
     "languageConfig": {
