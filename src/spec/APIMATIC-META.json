@@ -20,6 +20,8 @@
     "ExtendedAdditionalPropertiesSupport": true,
     "EnforceStandardizedCasing": true,
     "ControllerPostfix": "Api",
-    "DoNotSplitWords": ["oauth"]
+    "DoNotSplitWords": ["oauth"],
+    "CSharpSkipEqualityMethods": true,
+    "CSharpResolveExceptionPropertyCollisions": true
   }
 }
