@@ -13,12 +13,12 @@
     "faviconUrl": "static/images/favicon.ico",
     "languageConfig": {
       "java": {
-                "packageRepository": "Maven",
-                "packageSettings": {
-                    "GroupId": "com.apimatic",
-                    "PackageName": "sample-sdk-artifact-id",
-                    "Version": "1.0.0"
-                }
+        "packageRepository": "Maven",
+        "packageSettings": {
+          "GroupId": "com.apimatic",
+          "PackageName": "sample-sdk-artifact-id",
+          "Version": "1.0.0"
+        }
       },
       "typescript": {},
       "ruby": {},
@@ -30,6 +30,12 @@
     },
     "sdkWalkthrough": true,
     "portalSettings": {
+      "tourSettings": {
+        "isEnabled": true,
+        "status": "IN_COMPLETE",
+        "currentStep": 0,
+        "autoStart": true
+      },
       "theme": {
         "baseTheme": "cosmos",
         "colorMode": {
