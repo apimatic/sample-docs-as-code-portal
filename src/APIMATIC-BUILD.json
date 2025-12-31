@@ -30,6 +30,7 @@
     },
     "sdkWalkthrough": true,
     "portalSettings": {
+      "useHostedPortalScript": false,
       "tourSettings": {
         "isEnabled": true,
         "status": "IN_COMPLETE",
