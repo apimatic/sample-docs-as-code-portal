@@ -34,7 +34,8 @@
         "isEnabled": true,
         "status": "IN_COMPLETE",
         "currentStep": 0,
-        "autoStart": true
+        "autoStart": true,
+        "mockRequestUrl": "http://localhost:3000/api/sdk/execute-code"
       },
       "theme": {
         "baseTheme": "cosmos",
