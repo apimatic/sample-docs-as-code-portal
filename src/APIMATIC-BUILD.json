@@ -29,8 +29,8 @@
       "http": {}
     },
     "sdkWalkthrough": true,
+    "useHostedPortalScript": false,
     "portalSettings": {
-      "useHostedPortalScript": false,
       "tourSettings": {
         "isEnabled": true,
         "status": "IN_COMPLETE",
