@@ -42,7 +42,7 @@
         "baseTheme": "cosmos",
         "colorMode": {
           "defaultMode": "system",
-          "disableSwitch": false
+          "disableSwitch": true
         },
         "primaryColor": {
           "light": "#0C7FF2",
