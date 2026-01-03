@@ -36,7 +36,7 @@
         "status": "IN_COMPLETE",
         "currentStep": 0,
         "autoStart": true,
-        "mockRequestUrl": "http://localhost:3000/api/sdk/execute-code"
+        "mockRequestUrl": "https://onboarding.dev.apimatic.io/api/sdk/execute-code"
       },
       "theme": {
         "baseTheme": "cosmos",
