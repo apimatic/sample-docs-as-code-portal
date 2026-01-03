@@ -29,7 +29,7 @@
       "http": {}
     },
     "sdkWalkthrough": true,
-    "useHostedPortalScript": false,
+    "useHostedPortalScript": true,
     "portalSettings": {
       "tourSettings": {
         "isEnabled": true,
