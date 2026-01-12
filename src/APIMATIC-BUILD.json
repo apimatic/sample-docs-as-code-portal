@@ -12,14 +12,7 @@
     "logoLink": "https://www.apimatic.io",
     "faviconUrl": "static/images/favicon.ico",
     "languageConfig": {
-      "java": {
-        "packageRepository": "Maven",
-        "packageSettings": {
-          "GroupId": "com.apimatic",
-          "PackageName": "sample-sdk-artifact-id",
-          "Version": "1.0.0"
-        }
-      },
+      "java": {},
       "typescript": {},
       "ruby": {},
       "python": {},
