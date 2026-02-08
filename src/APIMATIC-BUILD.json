@@ -13,12 +13,12 @@
     "faviconUrl": "static/images/favicon.ico",
     "languageConfig": {
       "java": {
-                "packageRepository": "Maven",
-                "packageSettings": {
-                    "GroupId": "com.apimatic",
-                    "PackageName": "sample-sdk-artifact-id",
-                    "Version": "1.0.0"
-                }
+        "packageRepository": "Maven",
+        "packageSettings": {
+          "GroupId": "com.apimatic",
+          "PackageName": "sample-sdk-artifact-id",
+          "Version": "1.0.0"
+        }
       },
       "typescript": {},
       "ruby": {},
@@ -138,7 +138,8 @@
       },
       "enableHttpVerbsForAllLangs": true,
       "enableExport": true,
-      "enableConsoleCalls": true
+      "enableConsoleCalls": true,
+      "showMarketingContent": true
     }
   }
 }
