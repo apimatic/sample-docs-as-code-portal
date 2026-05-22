@@ -25,16 +25,7 @@
     "useHostedPortalScript": true,
     "portalSettings": {
       "aiAssistMenu": {
-        "enable": false,
-        "tools": {
-          "chatgpt": true,
-          "claude": true,
-          "perplexity": true,
-          "grok": true,
-          "googleAiStudio": true
-        },
-        "showCopyPage": true,
-        "showViewAsMarkdown": true
+        "enable": false
       }
       "tourSettings": {
         "isEnabled": true,
