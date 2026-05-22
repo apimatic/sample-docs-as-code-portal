@@ -24,6 +24,9 @@
     "sdkWalkthrough": true,
     "useHostedPortalScript": true,
     "portalSettings": {
+      "aiAssistMenu": {
+        "enable": false
+      },
       "tourSettings": {
         "isEnabled": true,
         "status": "IN_COMPLETE",
