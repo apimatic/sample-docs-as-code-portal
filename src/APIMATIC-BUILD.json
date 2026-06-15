@@ -40,13 +40,15 @@
           "defaultMode": "system",
           "disableSwitch": true
         },
-        "primaryColor": {
-          "light": "#0C7FF2",
-          "dark": "#7CBAF8"
-        },
-        "linkColor": {
-          "light": "#004AD7",
-          "dark": "#A3D1FF"
+        "colors": {
+          "primaryColor": {
+            "light": "#0C7FF2",
+            "dark": "#7CBAF8"
+          },
+          "linkColor": {
+            "light": "#004AD7",
+            "dark": "#A3D1FF"
+          }
         },
         "fontSource": [
           "https://fonts.googleapis.com/css?family=Inter:100,100i,300,300i,400,400i,500,500i,700,700i,900,900",
