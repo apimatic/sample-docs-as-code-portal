@@ -2,7 +2,6 @@
   "$schema": "https://titan.apimatic.io/api/build/schema",
   "buildFileVersion": "1",
   "generatePortal": {
-    "baseUrl": "http://xxx.com/",
     "debug": {
       "publishReport": true
     },
@@ -30,52 +29,6 @@
       "http": {}
     },
     "portalSettings": {
-      "languageSettings": {
-        "java_eclipse_jre_lib": {
-          "aiIntegration": {
-            "cursor": { "isEnabled": true },
-            "vscode": { "isEnabled": true },
-            "claudeCode": { "isEnabled": true }
-          }
-        },
-        "cs_net_standard_lib": {
-          "aiIntegration": {
-            "cursor": { "isEnabled": true },
-            "vscode": { "isEnabled": true },
-            "claudeCode": { "isEnabled": true }
-          }
-        },
-        "ts_generic_lib": {
-          "aiIntegration": {
-            "cursor": { "isEnabled": true },
-            "vscode": { "isEnabled": true },
-            "claudeCode": { "isEnabled": true }
-          }
-        },
-        "php_generic_lib_v2": {
-          "aiIntegration": {
-            "cursor": { "isEnabled": true },
-            "vscode": { "isEnabled": true },
-            "claudeCode": { "isEnabled": true }
-          }
-        },
-        "python_generic_lib": {
-          "aiIntegration": {
-            "cursor": { "isEnabled": true },
-            "vscode": { "isEnabled": true },
-            "claudeCode": { "isEnabled": true }
-          }
-        },
-        "ruby_generic_lib": {
-          "aiIntegration": {
-            "cursor": { "isEnabled": true },
-            "vscode": { "isEnabled": true },
-            "claudeCode": { "isEnabled": true }
-          }
-        },
-        "go_generic_lib": {},
-        "http_curl_v1": {}
-      },
       "theme": {
         "baseTheme": "cosmos",
         "colorMode": {
@@ -189,10 +142,5 @@
       "enableExport": true,
       "enableConsoleCalls": true
     }
-  },
-  "apiCopilotConfig": {
-    "key": "xxx",
-    "welcomeMessage": "Welcome to the Developer Portal!\n\nStart by asking API Copilot questions like:\n- `What can you do for me?`\n- `Tell me more about this API?`\n- `What are the possible usecases of this API?`",
-    "isEnabled": true
   }
 }
