@@ -138,7 +138,8 @@
       },
       "enableHttpVerbsForAllLangs": true,
       "enableExport": true,
-      "enableConsoleCalls": true
+      "enableConsoleCalls": true,
+      "showMarketingContent": true
     }
   }
 }
