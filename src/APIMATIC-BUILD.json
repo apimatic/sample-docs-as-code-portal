@@ -27,13 +27,6 @@
       "aiAssistMenu": {
         "enable": false
       },
-      "tourSettings": {
-        "isEnabled": true,
-        "status": "IN_COMPLETE",
-        "currentStep": 0,
-        "autoStart": true,
-        "mockRequestUrl": "https://onboarding.dev.apimatic.io/api/sdk/execute-code"
-      },
       "theme": {
         "baseTheme": "cosmos",
         "colorMode": {
