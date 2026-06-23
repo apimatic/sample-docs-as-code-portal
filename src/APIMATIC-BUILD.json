@@ -37,7 +37,7 @@
       "theme": {
         "baseTheme": "cosmos",
         "colorMode": {
-          "defaultMode": "system",
+          "defaultMode": "light",
           "disableSwitch": false
         },
         "colors": {
