@@ -29,6 +29,9 @@
       "http": {}
     },
     "portalSettings": {
+      "aiAssistMenu": {
+        "enable": true
+      },
       "theme": {
         "baseTheme": "cosmos",
         "colorMode": {
