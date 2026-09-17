@@ -1,0 +1,5 @@
+{
+  "title": "Swagger Petstore",
+  "description": "A sample pet store API, documented with the APIMatic CLI.",
+  "logo": "static/images/placeholder-logo.png"
+}
