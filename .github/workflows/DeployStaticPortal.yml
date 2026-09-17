@@ -25,7 +25,7 @@ jobs:
 
       # Generate Portal with APImatic CLI
       - name: Generate Portal
-        run: npx @apimatic/cli portal generate --auth-key="${{ secrets.API_KEY }}" --destination=${{ env.PORTAL_DIR }}
+        run: npx @apimatic/cli@1 portal generate --auth-key="${{ secrets.API_KEY }}" --destination=${{ env.PORTAL_DIR }}
 
       # Upload Portal Artifact
       - name: Upload Artifact
