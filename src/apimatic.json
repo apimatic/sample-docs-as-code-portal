@@ -1,0 +1,26 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/npm/@apimatic/cli@2/apimatic.schema.json",
+  "schemaVersion": 1,
+  "portal": {
+    "site": {
+      "name": "Swagger Petstore",
+      "description": "A sample pet store API, documented with the APIMatic CLI."
+    },
+    "brand": {
+      "logo": {
+        "light": "static/images/placeholder-logo.png",
+        "dark": "static/images/placeholder-logo-dark.png"
+      },
+      "favicon": "static/images/favicon.ico",
+      "colors": { "preset": "neutral" },
+      "fonts": { "body": "geist", "mono": "geist-mono" },
+      "colorMode": "both"
+    },
+    "navigation": { "layout": "notebook-navbar", "links": [] },
+    "home": { "cta": { "label": "Make your first call", "url": "/authentication" } },
+    "api": { "groupBy": "tag", "showDeprecated": true, "showInternal": false },
+    "ai": { "pageActions": true },
+    "advanced": { "tokens": { "light": {}, "dark": {} } }
+  },
+  "languages": { "java": {} }
+}

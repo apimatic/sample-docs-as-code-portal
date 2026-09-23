@@ -20,8 +20,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          # Version 2 of the CLI builds the portal on the runner and needs Node 22.12 or newer.
-          node-version: "22"
+          # Version 2 of the CLI builds the portal on the runner and needs Node 24 or newer.
+          node-version: "24"
 
       - name: Generate Portal
         run: npx @apimatic/cli@2 portal generate --auth-key="${{ secrets.API_KEY }}" --destination="${{ env.PORTAL_DIR }}"

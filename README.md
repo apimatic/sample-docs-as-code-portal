@@ -13,12 +13,13 @@ generation API instead.
 
 ```
 src/
-  portal.json              title, description and logo of the portal
+  apimatic.json            the portal's name, logo, colours, fonts and layout, and the
+                           SDK languages the project ships
   spec/
     petstore.json          the OpenAPI document; one page per operation, grouped by tag
     APIMATIC-META.json     settings for SDK generation
   content/
-    meta.json              sidebar order of the pages below
+    nav.json               the order of the pages below, and of the portal's tabs
     index.md               the home page
     authentication.md      a guide, written in Markdown with front matter
     what-apimatic-offers.md
@@ -30,9 +31,13 @@ src/
 The spec's file name becomes the URL segment: `spec/petstore.json` publishes the
 operation pages under `/api/petstore/`.
 
+`src/apimatic.json` names its schema, so an editor such as VS Code completes and checks
+the `portal` block as you type. The `languages` block lists the SDKs the project ships;
+a portal needs at least one.
+
 ## Build it
 
-You need Node 22.12 or newer and an APIMatic account with portal generation enabled.
+You need Node 24 or newer and an APIMatic account with portal generation enabled.
 
 ```bash
 npx @apimatic/cli@2 auth login
