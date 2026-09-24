@@ -13,7 +13,7 @@ generation API instead.
 
 ```
 src/
-  apimatic.json            the portal's name, logo, colours, fonts and layout, and the
+  apimatic.json            the portal's name, logo, colours and header links, and the
                            SDK languages the project ships
   spec/
     petstore.json          the OpenAPI document; one page per operation, grouped by tag

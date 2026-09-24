@@ -12,15 +12,11 @@
         "dark": "static/images/placeholder-logo-dark.png"
       },
       "favicon": "static/images/favicon.ico",
-      "colors": { "preset": "neutral" },
-      "fonts": { "body": "geist", "mono": "geist-mono" },
+      "colors": {},
       "colorMode": "both"
     },
-    "navigation": { "layout": "notebook-navbar", "links": [] },
-    "home": { "cta": { "label": "Make your first call", "url": "/authentication" } },
-    "api": { "groupBy": "tag", "showDeprecated": true, "showInternal": false },
-    "ai": { "pageActions": true },
-    "advanced": { "tokens": { "light": {}, "dark": {} } }
+    "navigation": { "links": [] },
+    "ai": { "pageActions": true }
   },
   "languages": { "java": {} }
 }
