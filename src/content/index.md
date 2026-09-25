@@ -1,30 +1,10 @@
 ---
 title: Welcome
-description: Getting started with the Swagger Petstore API
+description: Getting started with the API
 ---
 
-Welcome to the Swagger Petstore documentation.
+Welcome to the documentation. The **API Reference** tab describes every endpoint,
+and the **SDKs** tab has a client library for each language.
 
-The Petstore is a sample API for a store that sells pets. It covers the three
-things most APIs need: managing a catalogue (`/pet`), placing orders against it
-(`/store`), and the accounts that place them (`/user`).
-
-## Base URL
-
-All requests go to:
-
-```
-https://petstore3.swagger.io/api/v3
-```
-
-## Your first request
-
-Fetch every pet that is still up for adoption:
-
-```bash
-curl "https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available" \
-  -H "Accept: application/json"
-```
-
-Browse the full endpoint reference in the **API** section, or read
-[Authentication](/authentication) first if you plan to write data.
+Replace this page with your own introduction, and add more Markdown pages beside it.
+`nav.json` in the same folder sets the order they appear in.

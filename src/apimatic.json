@@ -2,10 +2,7 @@
   "$schema": "https://cdn.jsdelivr.net/npm/@apimatic/cli@2/apimatic.schema.json",
   "schemaVersion": 1,
   "portal": {
-    "site": {
-      "name": "Swagger Petstore",
-      "description": "A sample pet store API, documented with the APIMatic CLI."
-    },
+    "site": {},
     "brand": {
       "logo": {
         "light": "static/images/placeholder-logo.png",
@@ -18,5 +15,5 @@
     "navigation": { "links": [] },
     "ai": { "pageActions": true }
   },
-  "languages": { "java": {} }
+  "languages": { "csharp": {}, "typescript": {}, "python": {} }
 }
