@@ -1,12 +1,8 @@
 # Sample docs-as-code portal
 
-The `src/` directory on this branch is the starting point for projects made in
-APIMatic's onboarding web app. The app clones this repository, replaces
-`spec/petstore.json` with the user's own API description, and lets them download the
-result. They then install version 2 of the
-[APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli) and run `apimatic quickstart`
-with the project already in place, which records the SDK languages they choose and
-builds the portal.
+You can use this repository as a starting point for the input to version 2 of the
+[APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli). Its `src/` directory holds
+everything a portal needs.
 
 The `master` branch holds the version 1 sample, which APIMatic's hosted portal
 generation builds.
@@ -17,7 +13,7 @@ generation builds.
 src/
   apimatic.json        the portal's brand and header links, and its SDK languages
   spec/
-    petstore.json      the sample API; the onboarding app replaces it with the user's
+    petstore.json      the sample API description
   content/
     index.md           the home page
     nav.json           the order of the pages beside it
@@ -32,15 +28,9 @@ pages under `/api/petstore/`.
 
 Each language in the `languages` block gets a page on the SDKs tab with a download
 link, and its own code sample on every operation page. C#, TypeScript and Python are
-available today. A `plugin` block, which quickstart writes, adds a Context Plugin tab.
+available today. A `plugin` block adds a Context Plugin tab.
 `apimatic.json` names its schema, so an editor such as VS Code completes and checks it
 as you type.
-
-## Changing the starter
-
-Whatever is added under `src/` reaches every new project, so keep it free of anything
-that belongs to one API. Use only settings that released 2.x CLIs read: the CLI refuses
-keys it does not know, and the onboarding app clones this branch as it is at the time.
 
 ## Build it
 
@@ -70,5 +60,6 @@ language or a `plugin` block.
 
 `.github/workflows/DeployStaticPortal.yml` runs the same `portal generate` on GitHub
 Actions and uploads the result as a workflow artifact. Add the `API_KEY` repository
-secret with an APIMatic API key, then trigger the workflow by hand or push to this
-branch. Deploying the artifact is left to the hosting platform of your choice.
+secret with an APIMatic API key, then trigger the workflow by hand, or push to the
+branch the file names. Deploying the artifact is left to the hosting platform of your
+choice.
