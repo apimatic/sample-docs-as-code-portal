@@ -4,33 +4,18 @@ You can use this repository as a starting point for the input to version 2 of th
 [APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli). Its `src/` directory holds
 everything a portal needs.
 
-The `master` branch holds the version 1 sample, which APIMatic's hosted portal
-generation builds.
-
-## Layout
-
-```
-src/
-  apimatic.json        the portal's brand and header links, and its SDK languages
-  spec/
-    petstore.json      the sample API description
-  content/
-    index.md           the home page
-    nav.json           the order of the pages beside it
-  static/
-    images/            placeholder logos and favicon, copied to the site root
-```
-
-The portal takes its name and description from the spec, because `apimatic.json`
-leaves `site` empty; a project with more than one spec has to set `site.name`. The
-spec's file name becomes the URL segment: `spec/petstore.json` publishes the operation
-pages under `/api/petstore/`.
+The portal takes its name and description from the spec in `src/spec/`, because
+`src/apimatic.json` leaves `site` empty; a project with more than one spec has to set
+`site.name`. Each spec's file name becomes the URL segment its operation pages are
+published under, below `/api/`.
 
 Each language in the `languages` block gets a page on the SDKs tab with a download
 link, and its own code sample on every operation page. C#, TypeScript and Python are
-available today. A `plugin` block adds a Context Plugin tab.
-`apimatic.json` names its schema, so an editor such as VS Code completes and checks it
-as you type.
+available today. A `plugin` block adds a Context Plugin tab. `apimatic.json` names its
+schema, so an editor such as VS Code completes and checks it as you type.
+
+The `master` branch holds the version 1 sample, which APIMatic's hosted portal
+generation builds.
 
 ## Build it
 
