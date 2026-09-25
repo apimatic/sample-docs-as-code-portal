@@ -1,10 +1,12 @@
 # Sample docs-as-code portal
 
-The `src/` directory on this branch is the starting point for every project that
-`apimatic quickstart` creates in version 2 of the
-[APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli). Quickstart downloads
-`src/`, replaces `spec/petstore.json` with the user's own API description, and records
-the SDK languages they choose. Nothing outside `src/` is downloaded.
+The `src/` directory on this branch is the starting point for projects made in
+APIMatic's onboarding web app. The app clones this repository, replaces
+`spec/petstore.json` with the user's own API description, and lets them download the
+result. They then install version 2 of the
+[APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli) and run `apimatic quickstart`
+with the project already in place, which records the SDK languages they choose and
+builds the portal.
 
 The `master` branch holds the version 1 sample, which APIMatic's hosted portal
 generation builds.
@@ -15,7 +17,7 @@ generation builds.
 src/
   apimatic.json        the portal's brand and header links, and its SDK languages
   spec/
-    petstore.json      the sample API; quickstart replaces it with the user's
+    petstore.json      the sample API; the onboarding app replaces it with the user's
   content/
     index.md           the home page
     nav.json           the order of the pages beside it
@@ -37,9 +39,8 @@ as you type.
 ## Changing the starter
 
 Whatever is added under `src/` reaches every new project, so keep it free of anything
-that belongs to one API. Use only settings that every released 2.x CLI reads: the CLI
-refuses keys it does not know, and quickstart downloads whatever this branch holds at the
-time, whichever CLI version runs it.
+that belongs to one API. Use only settings that released 2.x CLIs read: the CLI refuses
+keys it does not know, and the onboarding app clones this branch as it is at the time.
 
 ## Build it
 
