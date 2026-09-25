@@ -1,39 +1,45 @@
 # Sample docs-as-code portal
 
-A developer portal for the Swagger Petstore API, built on your own machine by the
-[APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli) from the files in this
-repository. Nothing is uploaded to generate it: the CLI reads `src/`, builds a static
-site, and writes it to a folder you can host anywhere.
+The `src/` directory on this branch is the starting point for every project that
+`apimatic quickstart` creates in version 2 of the
+[APIMatic CLI](https://www.npmjs.com/package/@apimatic/cli). Quickstart downloads
+`src/`, replaces `spec/petstore.json` with the user's own API description, and records
+the SDK languages they choose. Nothing outside `src/` is downloaded.
 
-This branch uses the input layout of CLI version 2. The `master` branch holds the
-layout of version 1, which sends the same files to APIMatic's hosted portal
-generation API instead.
+The `master` branch holds the version 1 sample, which APIMatic's hosted portal
+generation builds.
 
 ## Layout
 
 ```
 src/
-  apimatic.json            the portal's name, logo, colours and header links, and the
-                           SDK languages the project ships
+  apimatic.json        the portal's brand and header links, and its SDK languages
   spec/
-    petstore.json          the OpenAPI document; one page per operation, grouped by tag
-    APIMATIC-META.json     settings for SDK generation
+    petstore.json      the sample API; quickstart replaces it with the user's
   content/
-    nav.json               the order of the pages below, and of the portal's tabs
-    index.md               the home page
-    authentication.md      a guide, written in Markdown with front matter
-    what-apimatic-offers.md
+    index.md           the home page
+    nav.json           the order of the pages beside it
   static/
-    images/                copied to the site root; the logo lives here
-  APIMATIC-BUILD.json      used by the SDK commands only
+    images/            placeholder logos and favicon, copied to the site root
 ```
 
-The spec's file name becomes the URL segment: `spec/petstore.json` publishes the
-operation pages under `/api/petstore/`.
+The portal takes its name and description from the spec, because `apimatic.json`
+leaves `site` empty; a project with more than one spec has to set `site.name`. The
+spec's file name becomes the URL segment: `spec/petstore.json` publishes the operation
+pages under `/api/petstore/`.
 
-`src/apimatic.json` names its schema, so an editor such as VS Code completes and checks
-the `portal` block as you type. The `languages` block lists the SDKs the project ships;
-a portal needs at least one.
+Each language in the `languages` block gets a page on the SDKs tab with a download
+link, and its own code sample on every operation page. C#, TypeScript and Python are
+available today. A `plugin` block, which quickstart writes, adds a Context Plugin tab.
+`apimatic.json` names its schema, so an editor such as VS Code completes and checks it
+as you type.
+
+## Changing the starter
+
+Whatever is added under `src/` reaches every new project, so keep it free of anything
+that belongs to one API. Use only settings that every released 2.x CLI reads: the CLI
+refuses keys it does not know, and quickstart downloads whatever this branch holds at the
+time, whichever CLI version runs it.
 
 ## Build it
 
@@ -44,15 +50,20 @@ npx @apimatic/cli@2 auth login
 npx @apimatic/cli@2 portal generate --destination ./portal
 ```
 
-The `portal/` folder is the whole site. Serve it from any static host: GitHub Pages,
-Netlify, Cloudflare Pages, S3 behind a CDN, or a plain web server. Point unknown paths
-at `404.html` and nothing else needs configuring.
+`portal generate` sends `src/` to APIMatic, which generates the SDKs, their docs, the
+code samples and, when there is a `plugin` block, the context plugin. The CLI then builds
+the site on your machine. The `portal/` folder is the whole site. Serve it from any static
+host: GitHub Pages, Netlify, Cloudflare Pages, S3 behind a CDN, or a plain web server.
+Point unknown paths at `404.html` and nothing else needs configuring.
 
 To edit with live reload:
 
 ```bash
 npx @apimatic/cli@2 portal serve
 ```
+
+It fetches the generated SDKs once, when it starts, so restart it after adding a
+language or a `plugin` block.
 
 ## Automate it
 
