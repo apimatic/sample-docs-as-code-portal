@@ -1,3 +1,4 @@
 {
+  "tabs": ["apimatic:sdks", "apimatic:plugin", "apimatic:api"],
   "pages": ["index", "..."]
 }
