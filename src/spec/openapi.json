@@ -882,7 +882,8 @@
           "required": true,
           "schema": {
             "type": "string"
-          }
+          },
+          "x-unique-name": "currentUsername"
         }
       ],
       "get": {
@@ -1118,10 +1119,16 @@
             "$ref": "#/components/schemas/Category"
           },
           "photoUrls": {
-            "$ref": "#/components/schemas/PetPhotoUrls"
+            "$ref": "#/components/schemas/PetPhotoUrls",
+            "xml": {
+              "name": "photoUrls"
+            }
           },
           "tags": {
-            "$ref": "#/components/schemas/PetTags"
+            "$ref": "#/components/schemas/PetTags",
+            "xml": {
+              "name": "tags"
+            }
           },
           "status": {
             "$ref": "#/components/schemas/PetStatus"
@@ -1146,7 +1153,7 @@
           }
         },
         "xml": {
-          "name": "default"
+          "name": "apiResponse"
         }
       },
       "FindPetsByStatusResponse200Json": {
