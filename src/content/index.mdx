@@ -3,99 +3,34 @@ title: Welcome
 description: Getting started with the API
 ---
 
-Welcome to the documentation. The **API Reference** tab describes every endpoint, and the
-**SDKs** tab has a client library for each language.
+Welcome to the unified knowledge base for your developers and AI agents!   
+APIMatic generates this portal and all included artifacts from your OpenAPI spec. Everything stays automatically in sync as your API evolves, so your API knowledge never goes stale.
 
-Replace this page with your own introduction, and add more Markdown pages beside it.
-`nav.json` in the same folder sets the order they appear in.
-
-## What APIMatic offers
-
-This portal was built by the **APIMatic CLI** from the OpenAPI document in `src/spec/`. The
-same command turns any specification into a portal like this one: reference documentation,
-SDKs in several languages, a request console on every operation, and the context an AI
-coding assistant needs to write working integration code.
+## What's included
 
 <Cards>
 
-<Card title="AI-ready API context">
-Context Plugins load your API's docs, SDKs and code samples into AI coding environments
-such as Claude Code, Cursor and GitHub Copilot, so developers integrate through natural
-language rather than a wall of reference pages.
+<Card title="Context Plugins">
+Plugins for coding agents like Claude Code, Cursor, and GitHub Copilot so they can generate accurate, production-ready integration code.
 </Card>
 
-<Card title="Reference and SDK documentation">
-Every operation is documented with its parameters, schemas and responses, beside an
-idiomatic, ready-to-run sample in each of your SDK languages.
+<Card title="SDKs" href="/sdks">
+Engineered for developers and AI agents alike, APIMatic's SDKs handle auth, retries, pagination, and server-sent events seamlessly.
 </Card>
 
-<Card title="A request console on every page">
-Send a real request from the operation page, with your own authorization and body, and see
-the response before writing any code.
+<Card title="API Reference">
+An API reference with SDK code samples for each operation, and a live API playground to call the API.
 </Card>
 
-<Card title="Multi-language SDKs">
-Client libraries generated from the same specification, each with its own page, download
-and getting-started documentation. C#, TypeScript and Python are available today.
-</Card>
-
-<Card title="Built for AI tools">
-Every page offers its Markdown source through the page actions menu, and the portal
-publishes `llms.txt` and `llms-full.txt`, so assistants can read your documentation as
-easily as your readers can.
-</Card>
-
-<Card title="Your brand">
-Logo per colour mode, favicon, primary colour, header links, and which folders become
-tabs: all set in `src/apimatic.json` and the `nav.json` files beside your pages.
+<Card title="Agent-Friendly Docs" href="/llms.txt" external>
+Full Markdown documentation alongside `llms.txt` and `llms-full.txt` files, with one-click shortcuts to send any page to Claude, ChatGPT, or Cursor.
 </Card>
 
 </Cards>
 
-## Ready to build your own?
+## Make it yours
 
-<Cards>
+- Set your logo, favicon, colours, and header links in `src/apimatic.json`.
+- Add Markdown pages to `src/content/`.
+- Replace this page with your own introduction page.
 
-<Card title="Explore APIMatic" href="https://www.apimatic.io/" external>
-See how APIMatic turns your API specification into a branded, AI-ready portal.
-</Card>
-
-<Card title="Read the docs" href="https://docs.apimatic.io/cli-getting-started/advanced-portal-setup/" external>
-The advanced portal setup guide, for configuring and customizing your own.
-</Card>
-
-</Cards>
-
-## Questions
-
-### How quickly can we launch a portal?
-
-In minutes. `apimatic quickstart` scaffolds this directory from an OpenAPI document,
-`apimatic portal serve` previews it as you edit, and `apimatic portal generate` writes a
-static site you can host anywhere.
-
-### How does the portal stay current as the API changes?
-
-Everything is built from `src/`, so updating the specification and running
-`portal generate` again republishes every reference page, code sample and SDK. Your own
-Markdown pages and your settings in `apimatic.json` are left alone.
-
-### How much can we customize?
-
-The `portal` block of `apimatic.json` carries the site name and address, the logo, favicon,
-primary colour and colour mode, and the header links. Markdown pages under `src/content/`
-become documentation pages, and each `nav.json` sets the order, the folder titles, and
-which folders become tabs.
-
-### Where can we host it?
-
-`portal generate` produces plain static files. Serve them from GitHub Pages, Netlify,
-Cloudflare Pages, S3 behind a CDN, or any web server. Point unknown paths at `404.html`
-and nothing else needs configuring.
-
-### What can AI tools do with this portal?
-
-Context Plugins connect your API to the assistant a developer already uses, so it answers
-questions and writes integration code from your specification rather than from guesses.
-Each page also offers its Markdown source, and the portal publishes `llms.txt` and
-`llms-full.txt` for tools that read a whole site at once.
