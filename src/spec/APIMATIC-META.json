@@ -1,0 +1,33 @@
+{
+  "ImportSettings": {
+    "PreferJsonSchemaNameOverTitle": true
+  },
+  "ValidationConfiguration": {
+    "Rulesets": {
+      "openapi-v3-agentic-tools-linting": {
+        "Rules": {
+          "Skip": [
+            "required-operation-description",
+            "required-description-for-enum-item",
+            "required-operation-summary"
+          ]
+        }
+      },
+      "openapi-v3-codegen-syntax-linting": {
+        "Rules": {
+          "Skip": [
+            "valid-operation-summary",
+            "valid-schema-title"
+          ]
+        }
+      },
+      "openapi-v3-apimatic-linting": {
+        "Rules": {
+          "Skip": [
+            "unique-schema-title"
+          ]
+        }
+      }
+    }
+  }
+}
